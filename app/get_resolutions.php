@@ -38,8 +38,7 @@ while ($row = mysqli_fetch_array($result)) {
 
 	$cases = json_decode($resp[0], true);
 
-	foreach ($cases as $case) {
-		print_pre($case);
+	foreach ($cases as $case) {		
 		mysqli_query($conn, sprintf("INSERT into `resolutions` (`case_id`, `date`, `text`) VALUES ('%s', '%s', \"%s\")",
 			$case['cause_num'],
 			preg_replace('/([^+]+)\+/', '$1', $case['adjudication_date']),
