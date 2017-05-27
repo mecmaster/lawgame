@@ -295,139 +295,88 @@
                             <table class="table table-bordered table-striped table-condensed">
                               <thead>
                               <tr>
-                                  <th>Code</th>
-                                  <th>Company</th>
-                                  <th class="numeric">Price</th>
-                                  <th class="numeric">Change</th>
-                                  <th class="numeric">Change %</th>
-                                  <th class="numeric">Open</th>
-                                  <th class="numeric">High</th>
-                                  <th class="numeric">Low</th>
-                                  <th class="numeric">Volume</th>
+                                  <th>№</th>
+                                  <th>№ справи</th>
+                                  <th>Суд</th>
+                                  <th>Опис</th>
+                                  <th>Статус</th>
                               </tr>
                               </thead>
                               <tbody>
-                              <tr>
-                                  <td>AAC</td>
-                                  <td>AUSTRALIAN AGRICULTURAL COMPANY LIMITED.</td>
-                                  <td class="numeric">$1.38</td>
-                                  <td class="numeric">-0.01</td>
-                                  <td class="numeric">-0.36%</td>
-                                  <td class="numeric">$1.39</td>
-                                  <td class="numeric">$1.39</td>
-                                  <td class="numeric">$1.38</td>
-                                  <td class="numeric">9,395</td>
-                              </tr>
-                              <tr>
-                                  <td>AAD</td>
-                                  <td>ARDENT LEISURE GROUP</td>
-                                  <td class="numeric">$1.15</td>
-                                  <td class="numeric">  +0.02</td>
-                                  <td class="numeric">1.32%</td>
-                                  <td class="numeric">$1.14</td>
-                                  <td class="numeric">$1.15</td>
-                                  <td class="numeric">$1.13</td>
-                                  <td class="numeric">56,431</td>
-                              </tr>
-                              <tr>
-                                  <td>AAX</td>
-                                  <td>AUSENCO LIMITED</td>
-                                  <td class="numeric">$4.00</td>
-                                  <td class="numeric">-0.04</td>
-                                  <td class="numeric">-0.99%</td>
-                                  <td class="numeric">$4.01</td>
-                                  <td class="numeric">$4.05</td>
-                                  <td class="numeric">$4.00</td>
-                                  <td class="numeric">90,641</td>
-                              </tr>
-                              <tr>
-                                  <td>ABC</td>
-                                  <td>ADELAIDE BRIGHTON LIMITED</td>
-                                  <td class="numeric">$3.00</td>
-                                  <td class="numeric">  +0.06</td>
-                                  <td class="numeric">2.04%</td>
-                                  <td class="numeric">$2.98</td>
-                                  <td class="numeric">$3.00</td>
-                                  <td class="numeric">$2.96</td>
-                                  <td class="numeric">862,518</td>
-                              </tr>
-                              <tr>
-                                  <td>ABP</td>
-                                  <td>ABACUS PROPERTY GROUP</td>
-                                  <td class="numeric">$1.91</td>
-                                  <td class="numeric">0.00</td>
-                                  <td class="numeric">0.00%</td>
-                                  <td class="numeric">$1.92</td>
-                                  <td class="numeric">$1.93</td>
-                                  <td class="numeric">$1.90</td>
-                                  <td class="numeric">595,701</td>
-                              </tr>
-                              <tr>
-                                  <td>ABY</td>
-                                  <td>ADITYA BIRLA MINERALS LIMITED</td>
-                                  <td class="numeric">$0.77</td>
-                                  <td class="numeric">  +0.02</td>
-                                  <td class="numeric">2.00%</td>
-                                  <td class="numeric">$0.76</td>
-                                  <td class="numeric">$0.77</td>
-                                  <td class="numeric">$0.76</td>
-                                  <td class="numeric">54,567</td>
-                              </tr>
-                              <tr>
-                                  <td>ACR</td>
-                                  <td>ACRUX LIMITED</td>
-                                  <td class="numeric">$3.71</td>
-                                  <td class="numeric">  +0.01</td>
-                                  <td class="numeric">0.14%</td>
-                                  <td class="numeric">$3.70</td>
-                                  <td class="numeric">$3.72</td>
-                                  <td class="numeric">$3.68</td>
-                                  <td class="numeric">191,373</td>
-                              </tr>
-                              <tr>
-                                  <td>ADU</td>
-                                  <td>ADAMUS RESOURCES LIMITED</td>
-                                  <td class="numeric">$0.72</td>
-                                  <td class="numeric">0.00</td>
-                                  <td class="numeric">0.00%</td>
-                                  <td class="numeric">$0.73</td>
-                                  <td class="numeric">$0.74</td>
-                                  <td class="numeric">$0.72</td>
-                                  <td class="numeric">8,602,291</td>
-                              </tr>
-                              <tr>
-                                  <td>AGG</td>
-                                  <td>ANGLOGOLD ASHANTI LIMITED</td>
-                                  <td class="numeric">$7.81</td>
-                                  <td class="numeric">-0.22</td>
-                                  <td class="numeric">-2.74%</td>
-                                  <td class="numeric">$7.82</td>
-                                  <td class="numeric">$7.82</td>
-                                  <td class="numeric">$7.81</td>
-                                  <td class="numeric">148</td>
-                              </tr>
-                              <tr>
-                                  <td>AGK</td>
-                                  <td>AGL ENERGY LIMITED</td>
-                                  <td class="numeric">$13.82</td>
-                                  <td class="numeric">  +0.02</td>
-                                  <td class="numeric">0.14%</td>
-                                  <td class="numeric">$13.83</td>
-                                  <td class="numeric">$13.83</td>
-                                  <td class="numeric">$13.67</td>
-                                  <td class="numeric">846,403</td>
-                              </tr>
-                              <tr>
-                                  <td>AGO</td>
-                                  <td>ATLAS IRON LIMITED</td>
-                                  <td class="numeric">$3.17</td>
-                                  <td class="numeric">-0.02</td>
-                                  <td class="numeric">-0.47%</td>
-                                  <td class="numeric">$3.11</td>
-                                  <td class="numeric">$3.22</td>
-                                  <td class="numeric">$3.10</td>
-                                  <td class="numeric">5,416,303</td>
-                              </tr>
+
+                              <?php
+                                require_once 'app/functions.php';
+                                mb_internal_encoding('UTF-8');
+
+                                 
+                                $parts_preg_tpl = '/^(.*?): ?(.*?), ?(.*?): ?(.*?)(,.*)?$/';
+
+                                function get_first_party($involved) {
+                                    global $parts_preg_tpl;
+
+                                    preg_match($parts_preg_tpl, $involved, $match);
+                                    if (count($match) >= 3) {
+                                      return [mb_ucfirst($match[1]), $match[2]];
+                                    }
+                                    return ['', ''];
+                                }
+
+                                function get_second_party($involved) {
+                                    global $parts_preg_tpl;
+                                    
+                                    preg_match($parts_preg_tpl, $involved, $match);
+
+                                    if (count($match) >= 5) {
+                                      return [mb_ucfirst($match[3]), $match[4]];
+                                    }
+
+                                    return ['', ''];
+                                    
+
+                                }
+
+                                
+
+                                $conn = connect_to_db();
+
+                                $result = mysqli_query($conn, "Select * from `hearings` h join `court_names` c on c.id = h.court_id WHERE `date` > NOW() ORDER by `date`");
+                                $i = 1;
+                                while ($hearing = mysqli_fetch_assoc($result)) {
+                                  $desc = sprintf("%s: %s<br>
+                                    %s: %s<br>
+                                    Суть спору: %s<br>
+                                    Категорія спору: %s",                              
+                                    get_first_party($hearing['involved'])[0],
+                                    get_first_party($hearing['involved'])[1],
+                                    get_second_party($hearing['involved'])[0],
+                                    get_second_party($hearing['involved'])[1],
+                                    $hearing['description'],
+                                    $hearing['forma']
+                                  );
+
+                                  printf("<tr>
+                                    <td class=\"numeric\">%s</td>
+                                    <td>%s</td>
+                                    <td>%s</td>
+                                    <td>%s</td>
+                                    <td>%s</td>
+                                    </tr>
+                                  ",
+                                  $i,
+                                  $hearing['number'],
+                                  $hearing['name'],
+                                  $desc,
+                                  "not set yet?"
+                                  );
+
+                                  $i++;
+                                }
+
+
+                                
+                                
+                              ?>
+
                               </tbody>
                           </table>
                           </section>

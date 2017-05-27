@@ -67,3 +67,28 @@ function get_fcontent( $url,  $javascript_loop = 0, $timeout = 5 ) {
         return array( $content, $response );
     }
 }
+
+function get_court_codes() {
+	$courts_file = fopen('courts.csv', 'r');
+
+	$output = [];
+
+	$header = fgetcsv($courts_file);
+
+	while (($row = fgetcsv($courts_file)) !== false) {
+		$output_row = [];
+		for ($i = 0; $i < count($row); $i++) {
+			$output_row[$header[$i]] = $row[$i];
+		}
+		$output[] = $output_row;
+	}
+
+	fclose($courts_file);
+
+	return $output;
+}
+
+function mb_ucfirst($str) {
+    $fc = mb_strtoupper(mb_substr($str, 0, 1));
+    return $fc.mb_substr($str, 1);
+}

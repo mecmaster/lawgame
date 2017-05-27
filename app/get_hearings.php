@@ -9,27 +9,6 @@ require_once 'functions.php';
 $conn = connect_to_db();
 
 
-function get_court_codes() {
-	$courts_file = fopen('courts.csv', 'r');
-
-	$output = [];
-
-	$header = fgetcsv($courts_file);
-
-	while (($row = fgetcsv($courts_file)) !== false) {
-		$output_row = [];
-		for ($i = 0; $i < count($row); $i++) {
-			$output_row[$header[$i]] = $row[$i];
-		}
-		$output[] = $output_row;
-	}
-
-	fclose($courts_file);
-
-	return $output;
-}
-
-
 
 function get_court_hearings($court_id, $date) {
 	$url_tpl = "https://opendatabot.com/api/v1/schedule?date=%s&court_id=%s&apiKey=3ETWXFcWna3X";
@@ -70,7 +49,8 @@ foreach ($court_codes as $court_code) {
 		$hearings = get_court_hearings($code, $date);
 
 		foreach ($hearings as $hearing) {
-			mysqli_query($conn, sprintf("INSERT into `hearings` (`judge`, `forma`, `number`, `involved`, `description`, `date`) VALUES ('%s', '%s', '%s', '%s', '%s', '%s')",
+			mysqli_query($conn, sprintf("INSERT into `hearings` (`court_id`, `judge`, `forma`, `number`, `involved`, `description`, `date`) VALUES (%s, '%s', '%s', '%s', '%s', '%s', '%s')",
+				$code,
 				$hearing['judge'],
 				$hearing['forma'],
 				$hearing['number'],
@@ -90,6 +70,7 @@ foreach ($court_codes as $court_code) {
 
 	//echo $code . "<br>";
 	//
+
 
 }
 
