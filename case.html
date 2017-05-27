@@ -13,7 +13,7 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
-	<link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">    
+	<link rel="stylesheet" href="assets/css/morris-0.4.3.min.css">    
         
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -38,14 +38,14 @@
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <a href="index.html" class="logo"><b>Law Game</b></a>
+            <a href="index.php" class="logo"><b>Law Game</b></a>
             <!--logo end-->
             <div class="nav notify-row" id="top_menu">
                 <!--  notification start -->
                 <ul class="nav top-menu">
                     <!-- settings start -->
                     <li class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.php#">
                             <i class="fa fa-tasks"></i>
                             <span class="badge bg-theme">4</span>
                         </a>
@@ -55,7 +55,7 @@
                                 <p class="green">Ваш рейтинг</p>
                             </li>
                             <li>
-                                <a href="index.html#">
+                                <a href="index.php#">
                                     <div class="task-info">
                                         <div class="desc">Загальний</div>
                                         <div class="percent">Boss</div>
@@ -68,7 +68,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html#">
+                                <a href="index.php#">
                                     <div class="task-info">
                                         <div class="desc">Адміністративні справи</div>
                                         <div class="percent">95%</div>
@@ -81,7 +81,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html#">
+                                <a href="index.php#">
                                     <div class="task-info">
                                         <div class="desc">Господарські справи</div>
                                         <div class="percent">30%</div>
@@ -94,7 +94,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html#">
+                                <a href="index.php#">
                                     <div class="task-info">
                                         <div class="desc">Кримінальні справи</div>
                                         <div class="percent">100%</div>
@@ -107,7 +107,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html#">
+                                <a href="index.php#">
                                     <div class="task-info">
                                         <div class="desc">Справи про адмінправопорушення</div>
                                         <div class="percent">100%</div>
@@ -120,7 +120,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html#">
+                                <a href="index.php#">
                                     <div class="task-info">
                                         <div class="desc">Цивільні справи</div>
                                         <div class="percent">2%</div>
@@ -140,7 +140,7 @@
                     <!-- settings end -->
                     <!-- inbox dropdown start-->
                     <li id="header_inbox_bar" class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.php#">
                             <i class="fa fa-envelope-o"></i>
                             <span class="badge bg-theme">5</span>
                         </a>
@@ -150,7 +150,7 @@
                                 <p class="green">You have 5 new messages</p>
                             </li>
                             <li>
-                                <a href="index.html#">
+                                <a href="index.php#">
                                     <span class="photo"><img alt="avatar" src="assets/img/ui-zac.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Zac Snider</span>
@@ -162,7 +162,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html#">
+                                <a href="index.php#">
                                     <span class="photo"><img alt="avatar" src="assets/img/ui-divya.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Divya Manian</span>
@@ -174,7 +174,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html#">
+                                <a href="index.php#">
                                     <span class="photo"><img alt="avatar" src="assets/img/ui-danro.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Dan Rogers</span>
@@ -186,7 +186,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html#">
+                                <a href="index.php#">
                                     <span class="photo"><img alt="avatar" src="assets/img/ui-sherman.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Dj Sherman</span>
@@ -198,7 +198,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="index.html#">See all messages</a>
+                                <a href="index.php#">See all messages</a>
                             </li>
                         </ul>
                     </li>
@@ -227,7 +227,7 @@
                   <h5 class="centered">Dima Gadomsky</h5>
                     
                   <li class="mt">
-                      <a class="active" href="index.html">
+                      <a class="active" href="index.php">
                           <i class="fa fa-dashboard"></i>
                           <span>Грати</span>
                       </a>
@@ -268,14 +268,70 @@
       *********************************************************************************************************************************************************** -->
       <!--main content start-->
       <section id="main-content">
+          
           <section class="wrapper site-min-height">
+
+<div class="row">
+                  <div class="col-lg-4">  
+                  <div id="hero-donut" class="graph" style="height: 200px;"></div>
+                  </div>
+
+                  <div class="col-lg-4">  
+Суддя
+                  </div>
+
+                  <div class="col-lg-4">  
+Таймер              
+                  </div>
+
+</div>
+
+<div class="row">
+                  <div class="col-lg-4">  
+Позивач
+                  </div>
+
+                  <div class="col-lg-4">  
+VS
+                  </div>
+
+                  <div class="col-lg-4">  
+Відповідач              
+                  </div>
+
+</div>
+
+
+<div class="row">
+                  <div class="col-lg-4">  
+
+                  </div>
+
+                  <div class="col-lg-4">  
+Кнопки
+                  </div>
+
+                  <div class="col-lg-4">  
+              
+                  </div>
+
+</div>
+
+
+
+
+
+
           <h3><i class="fa fa-angle-right"></i> Game</h3>
-                                            <div id="hero-donut" class="graph"></div>
+                                           
+                                            
 
               <!-- page start-->
 
               <!-- page end-->
           </section>
+
+
       </section><!-- /MAIN CONTENT -->
 
       <!--main content end-->
@@ -283,7 +339,7 @@
       <footer class="site-footer">
           <div class="text-center">
               2014 - Alvarez.is
-              <a href="morris.html#" class="go-top">
+              <a href="case.html#" class="go-top">
                   <i class="fa fa-angle-up"></i>
               </a>
           </div>
@@ -312,17 +368,6 @@
 
     $(function () {
       // data stolen from http://howmanyleft.co.uk/vehicle/jaguar_'e'_type
-      var tax_data = [
-           {"period": "2011 Q3", "licensed": 3407, "sorned": 660},
-           {"period": "2011 Q2", "licensed": 3351, "sorned": 629},
-           {"period": "2011 Q1", "licensed": 3269, "sorned": 618},
-           {"period": "2010 Q4", "licensed": 3246, "sorned": 661},
-           {"period": "2009 Q4", "licensed": 3171, "sorned": 676},
-           {"period": "2008 Q4", "licensed": 3155, "sorned": 681},
-           {"period": "2007 Q4", "licensed": 3226, "sorned": 620},
-           {"period": "2006 Q4", "licensed": 3245, "sorned": null},
-           {"period": "2005 Q4", "licensed": 3289, "sorned": null}
-      ];
 
 
       Morris.Donut({
@@ -337,19 +382,6 @@
       });
 
     
-      new Morris.Line({
-        element: 'examplefirst',
-        xkey: 'year',
-        ykeys: ['value'],
-        labels: ['Value'],
-        data: [
-          {year: '2008', value: 20},
-          {year: '2009', value: 10},
-          {year: '2010', value: 5},
-          {year: '2011', value: 5},
-          {year: '2012', value: 20}
-        ]
-      });
 
       $('.code-example').each(function (index, el) {
         eval($(el).text());
