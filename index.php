@@ -339,7 +339,7 @@
 
                                 $conn = connect_to_db();
 
-                                $result = mysqli_query($conn, "Select * from `hearings` h join `court_names` c on c.id = h.court_id WHERE `date` > NOW() ORDER by `date`");
+                                $result = mysqli_query($conn, "Select * from `hearings` h join `court_names` c on c.id = h.court_id WHERE `date` > NOW() ORDER by `date` LIMIT 20");
                                 $i = 1;
                                 while ($hearing = mysqli_fetch_assoc($result)) {
                                   $desc = sprintf("%s: %s<br>
