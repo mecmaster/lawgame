@@ -416,7 +416,8 @@
                       	</div>
                       	<div class="details">
                       		<p><muted>3 Hours Ago</muted><br/>
-                      		   <a href="#">Diana Kennedy</a> purchased a year subscription.<br/>
+                      		   <a href="#">Dima Gadomsky</a> поставив свою оцінку справі <a href="#">№14/2378</a>
+<br/>
                       		</p>
                       	</div>
                       </div>
@@ -427,7 +428,8 @@
                       	</div>
                       	<div class="details">
                       		<p><muted>7 Hours Ago</muted><br/>
-                      		   <a href="#">Brandon Page</a> purchased a year subscription.<br/>
+                      		   <a href="#">Volodymyr Visnevskyi</a> поставив свою оцінку справі <a href="#">№752/20021/13-к</a>
+<br/>
                       		</p>
                       	</div>
                       </div>
@@ -438,7 +440,8 @@
                       	</div>
                       	<div class="details">
                       		<p><muted>11 Hours Ago</muted><br/>
-                      		   <a href="#">Mark Twain</a> commented your post.<br/>
+                      		   <a href="#">Andrei Ilyuk</a> поставив свою оцінку справі <a href="#">№760/4358/17</a>
+<br/>
                       		</p>
                       	</div>
                       </div>
@@ -449,11 +452,13 @@
                       	</div>
                       	<div class="details">
                       		<p><muted>18 Hours Ago</muted><br/>
-                      		   <a href="#">Daniel Pratt</a> purchased a wallet in your store.<br/>
+                      		   <a href="#">Alexei Shevchenko</a> поставив свою оцінку справі <a href="#">№507/1289/15-ц</a>
+<br/>
                       		</p>
                       	</div>
                       </div>
 
+ 
                        <!-- USERS ONLINE SECTION -->
 						<h3>TEAM MEMBERS</h3>
                       <!-- First Member -->
