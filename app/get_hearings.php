@@ -41,9 +41,11 @@ $court_hearings = [];
 foreach ($court_codes as $court_code) {
 	$code = $court_code['id'];
 
+	if ($code < 66) continue;
+
 	$court_hearings_num = 0;
 
-	for ($i = 7; $i >= -7; $i--) {
+	for ($i = 3; $i >= -3; $i--) {
 		$date = date('Y-m-d', time() + $i * 24 * 60 * 60);
 
 		$hearings = get_court_hearings($code, $date);
@@ -67,6 +69,8 @@ foreach ($court_codes as $court_code) {
 	}
 
 	$court_hearings[$code] = $court_hearings_num;
+
+
 
 	//echo $code . "<br>";
 	//
