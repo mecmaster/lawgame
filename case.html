@@ -272,41 +272,67 @@
           <section class="wrapper site-min-height">
 
 <div class="row">
-                  <div class="col-lg-4">  
+                  <div class="col-lg-4" align="center">
+                  <h3>Аналітика</h3>  
                   <div id="hero-donut" class="graph" style="height: 200px;"></div>
                   </div>
 
                   <div class="col-lg-4" align="center">  
                   <h3>Суддя</h3>
                                             <img class="img-circle" src="assets/img/judge.png" width="200px" align="">
+                                            <h4>Аблов Євгеній Валерійович</h4>
 
                   </div>
 
                   <div class="col-lg-4">  
-Таймер              
+
+<h3>Ставки приймаються</h3><br>
+<div id="clockdiv">
+  <div>
+    <span class="days"></span>
+    <div class="smalltext">Днів</div>
+  </div>
+  <div>
+    <span class="hours"></span>
+    <div class="smalltext">Годин</div>
+  </div>
+  <div>
+    <span class="minutes"></span>
+    <div class="smalltext">Хвилин</div>
+  </div>
+  <div>
+    <span class="seconds"></span>
+    <div class="smalltext">Секунд</div>
+  </div>
+</div>
+           
                   </div>
 
 </div>
 
 <div class="row">
-                  <div class="col-lg-4" align="right">  
+                  <div class="col-lg-2" ></div>  
+                  <div class="col-lg-3" align="center">  
 
                   <h3>Позивач</h3>
                                             <img class="img-circle" src="assets/img/mvd.png" width="200px" align="">
+                                            <h3>Головна державна інспекція на автомобільному транспорті</h3>
 
                   </div>
 
-                  <div class="col-lg-4" align="center">  
+                  <div class="col-lg-2" align="center">  
                   <br><br><br>
                                             <img class="img-circle" src="assets/img/vs.png" width="150px" align="">
 
                   </div>
 
-                  <div class="col-lg-4" align="left">  
+                  <div class="col-lg-3" align="center">  
 
                   <h3>Відповідач</h3>
                                             <img class="img-circle" src="assets/img/man.png" width="200px" align="">
+                                            <h3>ОСОБА_1</h3>
                   </div>
+                  <div class="col-lg-2" ></div>
 
 </div>
 
@@ -317,7 +343,7 @@
                   </div>
 
                   <div class="col-lg-6" align="center"> 
-                  <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                  <button type="button" class="btn btn-primary btn-lg"><img src="assets/img/Like.png" width="120px"></button>
                   <button type="button" class="btn btn-primary btn-lg">Large button</button>
                   <button type="button" class="btn btn-primary btn-lg">Large button</button> 
 
@@ -454,6 +480,49 @@
       });
 
   </script>
+<script>
+  function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = new Date(Date.parse(new Date()) + 3 * 60 * 1000);
+initializeClock('clockdiv', deadline);
+</script>
 
   </body>
 </html>
