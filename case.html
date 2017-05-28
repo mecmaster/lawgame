@@ -284,6 +284,7 @@
                                     <td>2218/17336</td>
                                     <td>Про захист ділової репутації та стягнення моральної шкоди</td>
                                     <td>Хмельницький міськрайонний суд</td>
+                                    <td>28.05.2017</td>
                                     
                                 </tr>
                                 </tbody>
@@ -516,6 +517,8 @@ Ilya Fedorenko: Особисто я з позовної заяви не поба
 <div class="content-panel">Stepan Koval 2 Ostap Yarovyi: Ну, в такому разі, треба згадати і “непідсудність” оціночних суджень (п.19 тієї ж постанови ВСУ). Але, оскільки, напевно цього не видно з матеріалів справи, то, гадаю, варто виходити з основних передумов, що містяться в  позовній заяві. Тому я ставлю на відмову в задоволенні позову.
 <button class="btn btn-success btn-xs"><i class=" fa fa-check"></i></button>
 </div>
+<br>
+<input type="text" class="form-control" id="inputSuccess">
                   </div>
 
                                   <a data-toggle="modal" data-target="#myModal2" onclick="myFunctionButton2()">Secret button</a>
@@ -528,7 +531,7 @@ Ilya Fedorenko: Особисто я з позовної заяви не поба
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h4 class="modal-title" id="myModalLabel">Виграш</h4>
                   </div>
-                  <div class="modal-body">
+                  <div class="modal-body" align="center">
                   <p>
                     Ми щиро вітаємо переможця!
                     </p><p>
@@ -537,8 +540,10 @@ Ilya Fedorenko: Особисто я з позовної заяви не поба
                   <p>
                     Ви отримали нову нагороду:
                   </p>
-                  <p>Мантія поважного судді</p>
-                  <img src="assets/img/mantia.png" class="img-circle" width="90">
+                  <p>Мантія поважного судді додана до вашого профілю</p>
+                  <img src="assets/img/mantia.png" class="img-circle" width="90"><br>
+                  <button type="button" class="btn btn-success">Розказати друзям</button>
+
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -668,7 +673,7 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(Date.parse(new Date()) + 40 * 1000);
+var deadline = new Date(Date.parse(new Date()) + 40 * 60 * 1000);
 initializeClock('clockdiv', deadline);
 </script>
 
