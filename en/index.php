@@ -290,8 +290,52 @@
 
             <div class="col-lg-12">
                       <div class="content-panel">
-                      <h4><i class="fa fa-angle-right"></i> Responsive Table</h4>
                           <section id="unseen">
+						  
+						                              <h1 style="padding-left:1em">Hot cases</h1>
+                            <table class="table table-bordered table-striped table-condensed">
+                              <thead>
+                                <tr>
+                                  <th>№</th>
+                                  <th>Case №</th>
+                                  <th>Court</th>
+                                  <th>More</th>
+                                  <th>Status</th>
+                                </tr>
+                                </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>1</td>
+                                      <td>826/1930/17</td>
+                                      <td>Окружний адміністративний суд міста Києва</td>
+                                      <td>
+                                        Позивач: Ігор Суркіс, Григорій Суркіс, Рахміль Суркіс, Марина Суркіс, Світлана Суркіс, Поліна Ковалік.<br>
+                                        Відповідач: Національний банк України, Фонд гарантування вкладів фізичних осіб, Тимчасова адміністрація ПАТ “ПРИВАТБАНК”
+                                      </td>
+                                      <td>Розглядається</td>
+                                    </tr>
+                                    <tr>
+                                      <td>1</td>
+                                      <td>910/18299/16</td>
+                                      <td>Вищий господарський суд України</td>
+                                      <td>
+                                        Позивач: Антимонопольний комітет України<br>
+                                        Відповідач: ПАТ “ГАЗПРОМ” (Російська Федерація).
+                                      </td>
+                                      <td>Розглядається</td>
+                                    </tr>   
+                                    <tr>
+                                      <td>1</td>
+                                      <td>910/15197/16</td>
+                                      <td>Гоподарский суд міста Києва</td><td>
+                                        Позивач: ПАТ “УКРНАФТА”.<br>    
+                                        Відповідач: ТОВ “ЧЕРНІВЦІГАЗ ЗБУТ”
+                                      </td>
+                                      <td>Розглядається</td>
+                                    </tr>                                  
+                                  </tbody>
+                                </table>
+						  
                             <table class="table table-bordered table-striped table-condensed">
                               <thead>
                               <tr>
@@ -366,7 +410,7 @@
                                   $hearing['number'],
                                   $hearing['name'],
                                   $desc,
-                                  "not set yet?"
+                                  "Розглядається"
                                   );
 
                                   $i++;
@@ -376,7 +420,6 @@
                                 
                                 
                               ?>
-
                               </tbody>
                           </table>
                           </section>
